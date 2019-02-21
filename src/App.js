@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
-// import Test from './components/Test';
+import Navbar from './components/navbar/Navbar';
+// import IntroSection from './components/intro/IntroSection';
+// import ValuePropSection from './components/valueProposition/ValuePropSection';
+// import HowItWorks from './components/howItWorks/HowItWorks';
+// import Footer from './components/footer/Footer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <h1> Hello </h1>
-        <Route path="/hello" exact component={Test} /> */}
+        <Navbar />
+        {/* <Route path="/" exact component={IntroSection} />
+        <Route path="/value-proposition" exact component={ValuePropSection} />
+        <Route path="/how-it-works" exact component={HowItWorks}/> */}
+        {/* <Footer /> */}
       </div>
     );
   }
