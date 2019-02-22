@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar';
 import IntroSection from './components/intro/IntroSection';
 import ValuePropSection from './components/valueProposition/ValuePropSection';
 import HowItWorks from './components/howItWorks/HowItWorks';
+import SecondSignupSection from './components/secondSignupSection/SecondSignupSection';
 // import Footer from './components/footer/Footer';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
         <IntroSection />
         <ValuePropSection />
         <HowItWorks />
+        <SecondSignupSection />
         {/* <Footer /> */}
       </div>
     );
