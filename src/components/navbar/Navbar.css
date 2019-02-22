@@ -8,15 +8,6 @@
   justify-items: end;
 }
 
-.nav-li {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-  color: darkblue;
-}
-
 .nav-links {
   width: 100%;
   display: grid;
