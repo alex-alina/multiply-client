@@ -1,0 +1,22 @@
+.step-img {
+  display: block;
+  width: 30%;
+  height: 15vh;
+  border: 1px solid orange;
+  margin: 10px auto;
+}
+
+.cicle-num {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid orange;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.fit-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
