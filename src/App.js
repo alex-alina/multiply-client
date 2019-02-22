@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
+// import { Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import IntroSection from './components/intro/IntroSection';
 import ValuePropSection from './components/valueProposition/ValuePropSection';
 import HowItWorks from './components/howItWorks/HowItWorks';
 import SecondSignupSection from './components/secondSignupSection/SecondSignupSection';
-// import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer';
 
 class App extends Component {
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
         <ValuePropSection />
         <HowItWorks />
         <SecondSignupSection />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }

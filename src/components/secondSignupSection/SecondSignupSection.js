@@ -6,7 +6,7 @@ class SecondSignupSection extends PureComponent {
   render() {
     return (
       <div>
-        <h2>Keep in touck</h2>
+        <h2>Keep in touch</h2>
         <SignupFormContainer />
       </div>
     );
