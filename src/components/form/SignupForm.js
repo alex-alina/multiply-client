@@ -4,7 +4,6 @@ class SignupForm extends PureComponent {
   state = {}
 
   handleSubmit = (event) => {
-    const { name } = event.target;
     event.preventDefault();
     this.props.onSubmit(this.state);
     this.setState({

@@ -12,8 +12,8 @@ class Navbar extends PureComponent {
 
         <ul className='nav-links'>
           <li className='nav-li'><Link className="link" to='/'>intro</Link></li> 
-          <li className='nav-li'><Link className="link" to='/value-proposition'>how it helps</Link></li>
-          <li className='nav-li'><Link className="link" to='/how-it-works'>how it works</Link></li>
+          <li className='nav-li'><Link className="link" to='/'>how it helps</Link></li>
+          <li className='nav-li'><Link className="link" to='/'>how it works</Link></li>
         </ul>
       </div>
     );
