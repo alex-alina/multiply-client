@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import './ValuePropSection.css';
-import { FaEarlybirds } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 
 class ValuePropSection extends PureComponent {
@@ -10,7 +9,7 @@ class ValuePropSection extends PureComponent {
         <h2>Value Proposition</h2>
         <ul className="values-list">
           <li className="li-value-item">
-            <FaEarlybirds />
+            <FaCheckCircle />
             <p>Save time on scenes with repetitive elements</p>
           </li>
           <li className="li-value-item">

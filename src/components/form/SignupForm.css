@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  background-color: inherit;
+  margin: 2% auto;
+  padding-bottom: 2%;
+}
+
+.submit-btn {
+  max-width: 35%;
+  margin: 2% auto;
+}

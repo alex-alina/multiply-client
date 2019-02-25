@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import './SignupForm.css';
 
 class SignupForm extends PureComponent {
   state = {}
@@ -21,9 +22,9 @@ class SignupForm extends PureComponent {
   render() {
     return (
       <div className="signup-form">
-        <form onSubmit={this.handleSubmit}>
+        <form className="form" onSubmit={this.handleSubmit}>
           <label>
-            Email
+            Email <br></br>
             <input 
               type="email" 
               name="email" 
@@ -32,7 +33,7 @@ class SignupForm extends PureComponent {
               placeholder="myemail@hello.com"
             />
           </label>
-          <input type="submit" value="Submit" />
+          <input className="submit-btn" type="submit" value="Submit" />
         </form>
       </div>
     );

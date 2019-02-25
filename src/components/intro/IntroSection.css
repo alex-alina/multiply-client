@@ -1,0 +1,21 @@
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #325D79;
+  padding: 1vmax; 
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 49% 98%, 0 98%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
+}
+
+.main-title {
+  margin: 0.5% auto;
+  padding: 0.5% 0;
+  font-weight: 500;
+}
+.tag-line {
+  font-size: 2vmax;
+  padding: 0.5%;
+  font-weight: 400;
+
+}

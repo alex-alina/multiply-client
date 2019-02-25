@@ -1,0 +1,25 @@
+.values-container {
+  display: flex;
+  flex-direction: column;
+  color: #325D79;
+  background-color: #fff;
+  /* padding: 1%;  */
+}
+
+.values-list {
+  display: block;
+  width: 100%;
+  margin: 3%
+}
+
+.li-value-item {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1%;
+}
+
+.li-value-item p {
+  margin-left: 1%;
+  font-weight: 800;
+  font-size: 1rem;
+}
