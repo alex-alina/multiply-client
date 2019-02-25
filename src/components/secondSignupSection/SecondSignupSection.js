@@ -5,8 +5,8 @@ import SignupFormContainer from '../form/SignupFormContainer';
 class SecondSignupSection extends PureComponent {
   render() {
     return (
-      <div>
-        <h2>Keep in touch</h2>
+      <div className="second-signup-container">
+        <h2 className="second-signup-title">Keep in touch</h2>
         <SignupFormContainer />
       </div>
     );

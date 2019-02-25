@@ -24,7 +24,7 @@ class SignupForm extends PureComponent {
       <div className="signup-form">
         <form className="form" onSubmit={this.handleSubmit}>
           <label>
-            Email <br></br>
+            Email
             <input 
               type="email" 
               name="email" 

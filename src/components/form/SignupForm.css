@@ -3,11 +3,9 @@
   flex-direction: column;
   color: inherit;
   background-color: inherit;
-  margin: 2% auto;
-  padding-bottom: 2%;
+  margin: 0,5vmax auto;
 }
 
 .submit-btn {
-  max-width: 35%;
-  margin: 2% auto;
+  margin: 1vmax auto;
 }

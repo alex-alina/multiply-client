@@ -1,32 +1,42 @@
-.HIW-container {
+.hiw-container {
   display: block;
   color: #fff;
   background-color: #325D79;
-  padding: 3%; 
-  z-index: -1;
+  padding: 1vmax; 
   -webkit-clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
-  /* clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 52% 85%, 50% 90%, 48% 85%, 0 85%); */
   clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
 }
+
+.hiw-title {
+  margin: 2vmax auto 1vmax auto;
+}
+
+.hiw-subtitle {
+  margin: 0 auto 1vmax auto;
+}
+
 .step {
   display: block;
   width: 30%;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
-.step-img {
-  display: block;
-  width: 30%;
-  height: 15vh;
-  border: 1px solid orange;
-  margin: 10px auto;
+.step-description, .step-img {
+  width: 100%;
+  height: auto;
+  border: 1px solid transparent;
+  margin: 1vmax auto;
 }
 
-.cicle-num {
+.step-description {
+  height: 20%;
+}
+
+.num {
   display: block;
   width: 30px;
   height: 30px;
-  border: 1px solid orange;
+  border: 1px solid transparent;
   margin: 0 auto;
   border-radius: 50%;
 }
@@ -37,7 +47,11 @@
   object-fit: contain;
 }
 
-.steps, .step-images {
+.steps {
   display: flex;
 
+}
+
+.drawing-parameters {
+  font-size: 12px;
 }
