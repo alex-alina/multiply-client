@@ -1,31 +1,78 @@
-.values-container {
+.value-container {
   display: flex;
   flex-direction: column;
   color: #325D79;
   background-color: #fff;
+  padding: 1% 1% 2% 1%;
 }
 
-.center-values {
-  width: 80%;
-  margin: 0 auto;
-  padding-left: 25%;
+.value-title {
+  margin: 3% auto;
+  font-size: calc(1rem + 1vw);
 }
 
-.values-list {
-  display: block;
-  width: 100%;
-  margin: 0.5vmax auto;  
-}
-
-.li-value-item {
+.value-list {
   display: flex;
-  justify-content: flex-start;
-  padding: 0.5vmax;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  font-size: calc(1.3rem + 0.5vw);
+}
+  
+.li-value-item {
+  display: block;
+  width: 90%;
+  padding: 2%;
 }
 
 .li-value-item p {
-  margin-left: 1vmin;
-  font-weight: 800;
-  font-size: 1.2rem;
-  text-align: justify;
+  margin: 1%;
+  padding: 2%;
+  font-weight: 500;
+  font-size: calc(1.1rem + 0.5vw);
+  text-align: center;
+}
+
+@media (min-width: 50em) {
+  .value-title {
+    width: 100%;
+    margin: 1% 0 0.5% 0;
+    padding: 1%;
+    font-size: 1.5rem;
+  }
+
+  .value-list {
+    justify-content: space-between;
+  }
+  
+  .li-value-item {
+    width: 45%;
+    padding: 1%;
+  }
+
+  .li-icon {
+    margin-top: 2%;
+    font-size: 1.5rem;
+  }
+
+  .li-value-item p {
+    margin: 0 1% 1.5% 1%;
+    padding: 0 1%;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 85em) {
+  .value-title {
+    font-size: 1.6rem;
+  }
+
+  .li-icon {
+    margin-top: 1%;
+    font-size: 1.5rem;
+  }
+
+  .li-value-item p {
+    font-size: 1.5rem;
+  }
 }
