@@ -8,5 +8,12 @@
 }
 
 .second-signup-title {
-  margin-bottom: 0.5vmax;
+  margin-bottom: 1vmax;
+}
+
+@media (min-width: 70em) {
+  .second-signup-title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }

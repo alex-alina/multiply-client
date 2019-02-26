@@ -25,7 +25,7 @@ class ValuePropSection extends PureComponent {
           </li>
           <li className="li-value-item">
             <GiFairyWand className="li-icon" />
-            <p>Gain productivity superpowers by adding <br></br>a powerful tool to your workflow</p>
+            <p>Gain productivity superpowers by adding a powerful tool to your workflow</p>
           </li>
         </ul>
       </div>

@@ -15,13 +15,13 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 3vmax auto;
+  margin: 2vmax auto;
   padding: 1%;
   color: #fff;
 }
 
 .main-title {
-  margin: 3vmax auto;
+  margin: 1.5vmax auto;
   padding: 1%;
   font-weight: 800;
   font-style: oblique;
@@ -31,20 +31,43 @@
 
 .tag-line {
   padding: 1%;
-  margin-bottom: 5vmax;
+  margin-bottom: 3vmax;
   font-weight: 400;
   font-size: calc(1.3rem + 0.5vw);
   text-shadow: 1px 1px 0.5px #042341;
 }
 
 @media (min-width: 50em) {
+  .intro-container {
+    height: 50vh;
+  }
+
   .intro-text {
-    margin: 3vmin auto;
-    padding: 1%;
+    margin: 0 auto;
   }
 
   .main-title {
-    margin: 2vmin auto;
+    font-size: 2.75rem;
+  }
+
+  .tag-line { 
+    margin-bottom: 3vmin;
+    font-size: 1.75rem;
+  }
+}
+
+
+@media (min-width: 70em) {
+  .intro-container {
+    height: 50vh;
+  }
+
+  .intro-text {
+    margin: 0 auto;
+  }
+
+  .main-title {
+    margin: 2vmin auto 1vmin auto;
     padding: 2% 0;
     font-size: 3rem;
   }
