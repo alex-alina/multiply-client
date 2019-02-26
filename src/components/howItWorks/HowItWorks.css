@@ -1,44 +1,50 @@
 .hiw-container {
   display: block;
+  padding: 4% 2% 8% 2%; 
   color: #fff;
   background-color: #325D79;
-  padding: 1vmax; 
   -webkit-clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
   clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
 }
 
 .hiw-title {
-  margin: 2vmax auto 1vmax auto;
+  width: 85%;
+  margin: 4vmax auto 3vmax auto;
+  font: calc(0.75rem + 1vw);
 }
 
-.hiw-subtitle {
-  margin: 0 auto 1vmax auto;
+.steps {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .step {
   display: block;
-  width: 30%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 0 auto 2vmax auto;
 }
 
 .step-description, .step-img {
   width: 100%;
   height: auto;
-  border: 1px solid transparent;
   margin: 1vmax auto;
 }
 
 .step-description {
-  height: 20%;
+  height: auto;
+  margin-bottom: 2vmax;
 }
 
 .num {
   display: block;
   width: 30px;
   height: 30px;
-  border: 1px solid transparent;
   margin: 0 auto;
-  border-radius: 50%;
+  font-weight: 600;
+}
+
+.description, .num {
+  font-size: calc(1rem + 0.5vw);
 }
 
 .fit-img {
@@ -47,11 +53,68 @@
   object-fit: contain;
 }
 
-.steps {
-  display: flex;
-
+.drawing-parameters {
+  font-size: calc(0.65rem + 0.5vw);
 }
 
-.drawing-parameters {
-  font-size: 12px;
+@media (min-width: 50em) {
+  .hiw-container {
+    -webkit-clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
+    clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
+  }
+  
+  .hiw-title {
+    margin: 3% auto 0 auto;
+  }
+  
+  .step {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  .step-description, .step-img {
+    margin: 3% auto;
+  }
+  
+  .step-description {
+    height: 26%;
+    margin-bottom: 8%;
+  }
+  
+  .num {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 10% auto 0 auto;
+    font-weight: 600;
+  }
+  
+  .description, .num {
+    font-size: calc(1rem + 0.5vw);
+  }
+}
+
+@media (min-width: 70em) {
+  .step {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .step-description {
+    height: 24%;
+    margin-bottom: 30px;
+  }
+
+  .hiw-title {
+    font-size: 1.75rem;
+    margin: 1.5% auto 0 auto;
+  }
+  
+  .description, .num {
+    font-size: 1.3rem;
+  }
+
+  .drawing-parameters {
+    font-size: 0.95rem;
+  }
 }

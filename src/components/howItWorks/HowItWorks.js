@@ -6,14 +6,12 @@ class HowItWorks extends PureComponent {
     return (
       <div className="hiw-container">
         <div>
-          <h2 className="hiw-title">Template Drawings - How It Works</h2>
-          {/* <h4 className="hiw-subtitle">Template Drawings</h4> */}
-
+          <h2 className="hiw-title">Template Drawings: How It Works</h2>
           <div className="steps">
             <div className="step">
               <div className="step-description">
                 <div className="num">1</div>
-                <p>Start with a drawing</p>
+                <p className="description">Start with a drawing</p>
               </div>
 
               <div className="step-img">
@@ -24,7 +22,7 @@ class HowItWorks extends PureComponent {
             <div className="step">
               <div className="step-description">
                 <div className="num">2</div>
-                <p>Parametrize drawing</p>
+                <p className="description">Parametrize drawing</p>
                 <span className="drawing-parameters">position | size | rotation <br></br> color | control point</span>
               </div>
 
@@ -36,7 +34,7 @@ class HowItWorks extends PureComponent {
             <div className="step">
               <div className="step-description">
                 <div className="num">3</div>
-                <p>Generate new drawing <br></br> from template drawing</p>
+                <p className="description">Generate new drawing <br></br> from template drawing</p>
               </div>
 
               <div className="step-img">
