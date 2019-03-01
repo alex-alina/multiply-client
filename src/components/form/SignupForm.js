@@ -30,7 +30,7 @@ class SignupForm extends PureComponent {
               name="email" 
               value={this.state.email || ''}
               onChange={this.handleChange} 
-              placeholder="myemail@hello.com"
+              placeholder="email@hello.com"
             />
           </label>
           <input className="submit-btn" type="submit" value="Submit" />

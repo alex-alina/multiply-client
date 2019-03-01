@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import './ValuePropSection.css';
-import { FaHatWizard, FaRegCopy } from "react-icons/fa";
+import { FaRegCopy } from "react-icons/fa";
 import { MdAccessTime } from "react-icons/md";
 import { IoIosFlash } from "react-icons/io";
 import { GiFairyWand } from "react-icons/gi";

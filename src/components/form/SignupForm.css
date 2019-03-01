@@ -8,18 +8,18 @@
 }
 
 label {
-  font-size: calc(1.2rem + 0.5vw);
+  font-size: calc(1rem + 0.5vw);
 }
 
 .submit-btn {
-  margin: 0.5vmax auto 0 auto;
+  margin: 0.5vmax auto 6vmax auto;
   width: 30%;
   height: 30px;
   border: none;
-  border-radius: 1.5%;
+  border-radius: 15px;
   background-color: #F26627;
   color: #fff;
-  font-size: calc(0.9rem + 0.5vw);
+  font-size: calc(0.8rem + 0.5vw);
   font-family: 'Montserrat', serif;
   vertical-align: center;
 }
@@ -31,7 +31,7 @@ input[type=email] {
   width: 60%;
   height: 30px;
   border: 1px solid #325D79;
-  border-radius: 1.5%;
+  border-radius: 15px;
   font-family: 'Montserrat', serif;
   font-size: calc(0.7rem + 0.5vw);
   color: #325D79;
@@ -43,9 +43,17 @@ input[type=email]:focus {
   box-shadow: 1px 0.5px 0.5px 1px #9CD7D1;
 }
 
+input[type=email]::placeholder {
+  color: #325D79;
+}
+
 @media (min-width: 50em) {
   input[type=email] {
     width: 45%;
+  }
+  
+  .submit-btn {
+    margin: 0.5vmax auto 3vmax auto;
   }
 }
 
@@ -61,6 +69,5 @@ input[type=email]:focus {
 
   .submit-btn {
     width: 230px;
-    margin:0 auto;
   }
 }
