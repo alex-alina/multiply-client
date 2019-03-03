@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-// import { Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import IntroSection from './components/intro/IntroSection';
 import ValuePropSection from './components/valueProposition/ValuePropSection';

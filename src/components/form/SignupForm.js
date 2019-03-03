@@ -25,11 +25,11 @@ class SignupForm extends PureComponent {
         <form className="form" onSubmit={this.handleSubmit}>
           <label>
             Signup to get the latests updates <br></br>
-            <input 
-              type="email" 
-              name="email" 
+            <input
+              type="email"
+              name="email"
               value={this.state.email || ''}
-              onChange={this.handleChange} 
+              onChange={this.handleChange}
               placeholder="email@hello.com"
             />
           </label>

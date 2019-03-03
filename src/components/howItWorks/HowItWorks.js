@@ -4,7 +4,7 @@ import './HowItWorks.css';
 class HowItWorks extends PureComponent {
   render() {
     return (
-      <div className="hiw-container">
+      <div id="how-it-works" className="hiw-container">
         <div>
           <h2 className="hiw-title">Template Drawings: How It Works</h2>
           <div className="steps">

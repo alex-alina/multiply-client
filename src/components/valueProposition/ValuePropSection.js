@@ -8,7 +8,7 @@ import { GiFairyWand } from "react-icons/gi";
 class ValuePropSection extends PureComponent {
   render() {
     return (
-      <div className="value-container">
+      <div id="value-proposition" className="value-container">
         <h2 className="value-title">Value Proposition</h2>
         <ul className="value-list">
           <li className="li-value-item">
