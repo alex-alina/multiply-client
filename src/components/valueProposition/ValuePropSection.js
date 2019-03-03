@@ -1,28 +1,30 @@
 import React, { PureComponent } from 'react';
 import './ValuePropSection.css';
-import { FaEarlybirds } from "react-icons/fa";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaRegCopy } from "react-icons/fa";
+import { MdAccessTime } from "react-icons/md";
+import { IoIosFlash } from "react-icons/io";
+import { GiFairyWand } from "react-icons/gi";
 
 class ValuePropSection extends PureComponent {
   render() {
     return (
-      <div className="values-container">
-        <h2>Value Proposition</h2>
-        <ul className="values-list">
+      <div id="value-proposition" className="value-container">
+        <h2 className="value-title">Value Proposition</h2>
+        <ul className="value-list">
           <li className="li-value-item">
-            <FaEarlybirds />
+            <MdAccessTime className="li-icon" />
             <p>Save time on scenes with repetitive elements</p>
           </li>
           <li className="li-value-item">
-            <FaCheckCircle />
+            <FaRegCopy className="li-icon" />
             <p>Turn your designs into reusable templates</p>
           </li>
           <li className="li-value-item">
-            <FaCheckCircle />
+            <IoIosFlash className="li-icon" />
             <p>Quickly make variations of your work</p>
           </li>
           <li className="li-value-item">
-            <FaCheckCircle />
+            <GiFairyWand className="li-icon" />
             <p>Gain productivity superpowers by adding a powerful tool to your workflow</p>
           </li>
         </ul>

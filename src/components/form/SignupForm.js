@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react';
+import './SignupForm.css';
 
 class SignupForm extends PureComponent {
   state = {}
 
   handleSubmit = (event) => {
-    const { name } = event.target;
     event.preventDefault();
     this.props.onSubmit(this.state);
     this.setState({
@@ -22,18 +22,18 @@ class SignupForm extends PureComponent {
   render() {
     return (
       <div className="signup-form">
-        <form onSubmit={this.handleSubmit}>
+        <form className="form" onSubmit={this.handleSubmit}>
           <label>
-            Email
-            <input 
-              type="email" 
-              name="email" 
+            Signup to get the latests updates <br></br>
+            <input
+              type="email"
+              name="email"
               value={this.state.email || ''}
-              onChange={this.handleChange} 
-              placeholder="myemail@hello.com"
+              onChange={this.handleChange}
+              placeholder="email@hello.com"
             />
           </label>
-          <input type="submit" value="Submit" />
+          <input className="submit-btn" type="submit" value="Submit" />
         </form>
       </div>
     );

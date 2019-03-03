@@ -1,0 +1,19 @@
+.second-signup-container {
+  display: flex;
+  flex-direction: column;
+  color: #325D79;
+  background-color: #fff;
+  margin-top: 1vmax;
+  padding: 1vmax; 
+}
+
+.second-signup-title {
+  margin-bottom: 1vmax;
+}
+
+@media (min-width: 70em) {
+  .second-signup-title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}

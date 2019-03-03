@@ -1,22 +1,120 @@
-.step-img {
+.hiw-container {
   display: block;
-  width: 30%;
-  height: 15vh;
-  border: 1px solid orange;
-  margin: 10px auto;
+  padding: 4% 2% 8% 2%; 
+  color: #fff;
+  background-color: #325D79;
+  -webkit-clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
+  clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
 }
 
-.cicle-num {
+.hiw-title {
+  width: 85%;
+  margin: 4vmax auto 3vmax auto;
+  font: calc(0.75rem + 1vw);
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: block;
+  width: 70%;
+  margin: 0 auto 2vmax auto;
+}
+
+.step-description, .step-img {
+  width: 100%;
+  height: auto;
+  margin: 1vmax auto;
+}
+
+.step-description {
+  height: auto;
+  margin-bottom: 2vmax;
+}
+
+.num {
   display: block;
   width: 30px;
   height: 30px;
-  border: 1px solid orange;
   margin: 0 auto;
-  border-radius: 50%;
+  font-weight: 600;
+}
+
+.description, .num {
+  font-size: calc(1rem + 0.5vw);
 }
 
 .fit-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.drawing-parameters {
+  font-size: calc(0.65rem + 0.5vw);
+}
+
+@media (min-width: 50em) {
+  .hiw-container {
+    -webkit-clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
+    clip-path: polygon(0% 0%, 48% 0%, 50% 2%, 52% 0%, 100% 0%, 100% 98%, 52% 98%, 50% 100%, 48% 98%, 0 98%);
+  }
+  
+  .hiw-title {
+    margin: 3% auto 0 auto;
+  }
+  
+  .step {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  .step-description, .step-img {
+    margin: 3% auto;
+  }
+  
+  .step-description {
+    height: 26%;
+    margin-bottom: 8%;
+  }
+  
+  .num {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 10% auto 0 auto;
+    font-weight: 600;
+  }
+  
+  .description, .num {
+    font-size: calc(1rem + 0.5vw);
+  }
+}
+
+@media (min-width: 70em) {
+  .step {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .step-description {
+    height: 24%;
+    margin-bottom: 30px;
+  }
+
+  .hiw-title {
+    font-size: 1.75rem;
+    margin: 1.5% auto 0 auto;
+  }
+  
+  .description, .num {
+    font-size: 1.3rem;
+  }
+
+  .drawing-parameters {
+    font-size: 0.95rem;
+  }
 }

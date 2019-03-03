@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Navbar extends PureComponent {
   render() {
@@ -9,11 +9,10 @@ class Navbar extends PureComponent {
         <div className="logo-container">
           <h3 className="company-name">multiply</h3>
         </div>
-
-        <ul className='nav-links'>
-          <li className='nav-li'><Link className="link" to='/'>intro</Link></li> 
-          <li className='nav-li'><Link className="link" to='/value-proposition'>how it helps</Link></li>
-          <li className='nav-li'><Link className="link" to='/how-it-works'>how it works</Link></li>
+        <ul className='show-nav-links'>
+          <li className='nav-li'><Link className="link" to='#home'>Home</Link></li>
+          <li className='nav-li'><Link className="link" to='#value-proposition'>Value proposition</Link></li>
+          <li className='nav-li'><Link className="link" to='#how-it-works'>How it works</Link></li>
         </ul>
       </div>
     );
