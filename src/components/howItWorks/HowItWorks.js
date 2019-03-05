@@ -1,5 +1,8 @@
 import React, { PureComponent } from 'react';
 import './HowItWorks.css';
+import step1 from '../../images/step1.svg';
+import step2 from '../../images/step2.svg';
+import step3 from '../../images/step3.svg';
 
 class HowItWorks extends PureComponent {
   render() {
@@ -15,7 +18,7 @@ class HowItWorks extends PureComponent {
               </div>
 
               <div className="step-img">
-                <img className="fit-img" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""></img>
+                <img id="step1" className="fit-img" src={step1} alt="Green leaf vector" />
               </div>
             </div>
 
@@ -27,7 +30,7 @@ class HowItWorks extends PureComponent {
               </div>
 
               <div className="step-img">
-                <img className="fit-img" src="https://images.unsplash.com/photo-1550684848-86a5d8727436?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""></img>
+                <img id="step2" className="fit-img" src={step2} alt="" />
               </div>
             </div>
 
@@ -38,7 +41,7 @@ class HowItWorks extends PureComponent {
               </div>
 
               <div className="step-img">
-                <img className="fit-img" src="https://images.unsplash.com/photo-1550684847-75bdda21cc95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""></img>
+                <img className="fit-img" src={step3} alt="" />
               </div>
             </div>
           </div>
