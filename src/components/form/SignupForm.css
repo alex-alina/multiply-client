@@ -10,6 +10,12 @@
 label {
   font-size: calc(1rem + 0.5vw);
 }
+/* test custom input validation */
+.form-control:valid~.invalid-feedback {display: none;}
+input[type=email]:invalid {
+  border: 2px solid #F26627;
+}
+/* end of test */
 
 .submit-btn {
   margin: 0.5vmax auto 6vmax auto;
