@@ -45,6 +45,9 @@ I want to learn:
 * Mobile first versus Responsive pages.
 * How to design and choose a color scheme for a landing page. 
 
+##Work Process
+![](work-process.png)
+
 ## License
 
 MIT Licence - Copyright &copy; 2019 - Alina Rusu.
