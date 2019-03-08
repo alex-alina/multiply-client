@@ -45,7 +45,7 @@ I want to learn:
 * Mobile first versus Responsive pages.
 * How to design and choose a color scheme for a landing page. 
 
-##Work Process
+## Work Process
 ![](work-process.png)
 
 ## License
