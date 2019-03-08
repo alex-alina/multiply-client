@@ -10,8 +10,9 @@ Multiply lets designers quickly create variations of object designs, making them
 
 Multiply will be released as a plugin for Adobe Illustrator and Bohemian Sketch, and will integrate natively with the target software.
 
-## Demo - WIP
-![](WIP_demo.gif)
+## Demo
+[Demo - WIP](https://competent-golick-0dcc04.netlify.com/)
+![](WIP-demo.gif)
 
 ## Tech stack
 
