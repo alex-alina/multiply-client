@@ -1,21 +1,12 @@
 import React, { PureComponent } from 'react';
 import './SignupForm.css';
 import FormValidation from './FormValidation';
-// import { validate } from 'validate.js';
-
-// const constraints = {
-//   from: {
-//     email: {
-//       message: "Please enter a valid email"
-//     }
-//   }
-// };
 
 class SignupForm extends PureComponent {
   state = {
     confirmRegistration: false,
   }
-
+  
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.onSubmit(this.state);
@@ -31,8 +22,7 @@ class SignupForm extends PureComponent {
       [name]: value
     });
   }
-  // validate email input
-  // validate({from: email}, constraints);
+  // validate email inpuyt
 
   render() {
     return (
