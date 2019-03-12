@@ -1,0 +1,28 @@
+.validation-message {
+  display: block;
+  margin: 1vw auto 2vw auto;
+  width: 60%;
+  height: 30px;
+  border: 1px solid #325D79;
+  border-radius: 15px;
+  background-color: #fff;
+  font-family: 'Montserrat', serif;
+  font-size: calc(0.7rem + 0.5vw);
+  color:#325D79;
+  font-weight: 600;
+  text-align: center; 
+  line-height: 1.75rem;
+}
+
+@media (min-width: 50em) {
+  .validation-message {
+    width: 45%;
+  }
+}
+
+@media (min-width: 70em) {
+  .validation-message {
+    width: 400px;
+    margin: 2.5% auto 1.5% auto;
+  }
+}

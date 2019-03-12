@@ -1,14 +1,27 @@
 import React, { PureComponent } from 'react';
 import './SignupForm.css';
+import FormValidation from './FormValidation';
+// import { validate } from 'validate.js';
+
+// const constraints = {
+//   from: {
+//     email: {
+//       message: "Please enter a valid email"
+//     }
+//   }
+// };
 
 class SignupForm extends PureComponent {
-  state = {}
+  state = {
+    confirmRegistration: false,
+  }
 
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.onSubmit(this.state);
     this.setState({
-      email: ""
+      email: "",
+      confirmRegistration: true,
     });
   }
 
@@ -18,6 +31,8 @@ class SignupForm extends PureComponent {
       [name]: value
     });
   }
+  // validate email input
+  // validate({from: email}, constraints);
 
   render() {
     return (
@@ -36,10 +51,8 @@ class SignupForm extends PureComponent {
               maxlength="100"
               pattern={/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/}
             />
-            <span className="invalid-feedback">
-              <p className="error-message">Enter a valid email address</p>
-            </span>
           </label>
+          {this.state.confirmRegistration ? <FormValidation /> : null}
           <input className="submit-btn" type="submit" value="Submit" />
         </form>
       </div>
