@@ -2,6 +2,10 @@
 
 WIP: This is the client for Multiply's landing page, a static page with a signup form that collects emails for a mailing list.
 
+## Demo
+[Demo - WIP](https://competent-golick-0dcc04.netlify.com/)
+![](WIP-demo.gif)
+
 ## Description
 
 The goal of this project is to create a landing page for Multiply, a vector graphics project. 
@@ -9,10 +13,6 @@ The goal of this project is to create a landing page for Multiply, a vector grap
 Multiply lets designers quickly create variations of object designs, making them more efficient in creating repetitive patterns, a process that is now done by hand.
 
 Multiply will be released as a plugin for Adobe Illustrator and Bohemian Sketch, and will integrate natively with the target software.
-
-## Demo
-[Demo - WIP](https://competent-golick-0dcc04.netlify.com/)
-![](WIP-demo.gif)
 
 ## Tech stack
 
