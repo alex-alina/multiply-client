@@ -1,17 +1,33 @@
 import React, { PureComponent } from 'react';
 import './SignupForm.css';
-import FormValidation from './FormValidation';
+import FormValidationMessage from './FormValidationMessage';
+const regExPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 class SignupForm extends PureComponent {
   state = {
     confirmRegistration: false,
+    disableSubmit: true,
   }
-  
+
+  validateEmail = () => {
+    if (regExPattern.test(this.state.email)) {
+      this.setState({
+        invalidEmail: false,
+        disableSubmit: false,
+      });
+    } else {
+      this.setState({
+        invalidEmail: true,
+      });
+    }
+  }
+
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.onSubmit(this.state);
     this.setState({
       email: "",
+      invalidEmail: "",
       confirmRegistration: true,
     });
   }
@@ -19,10 +35,10 @@ class SignupForm extends PureComponent {
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({
-      [name]: value
+      [name]: value,
     });
+    this.validateEmail();
   }
-  // validate email inpuyt
 
   render() {
     return (
@@ -37,13 +53,12 @@ class SignupForm extends PureComponent {
               value={this.state.email || ''}
               onChange={this.handleChange}
               placeholder="email@hello.com"
-              minlength="6"
-              maxlength="100"
-              pattern={/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/}
+              autocomplete="off"
             />
           </label>
-          {this.state.confirmRegistration ? <FormValidation /> : null}
-          <input className="submit-btn" type="submit" value="Submit" />
+          { this.state.invalidEmail ? <FormValidationMessage color="#F26627" message="Please fill in a valid email" /> : null}
+          {this.state.confirmRegistration ? <FormValidationMessage color="#fff" message="Email registration successful." /> : null}
+          <input className="submit-btn" type="submit" value="Submit" disabled={this.state.disableSubmit}/>
         </form>
       </div>
     );

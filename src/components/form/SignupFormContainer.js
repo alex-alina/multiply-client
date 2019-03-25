@@ -5,6 +5,7 @@ import SignupForm from '../form/SignupForm';
 const baseUrl = 'http://localhost:4000';
 
 class SignupFormContainer extends PureComponent {
+
   handleSubmit = (email) => {
     request
       .post(`${baseUrl}/contacts`)
