@@ -25,7 +25,7 @@ label {
   vertical-align: center;
 }
 
-input[type=email] {
+input[type=text] {
   outline: none;
   display: block;
   margin: 3vw auto 2px auto;
@@ -40,17 +40,17 @@ input[type=email] {
   text-align: center; 
 }
 
-input[type=email]:focus {
+input[type=text]:focus {
   border: 1px solid #9CD7D1;
   box-shadow: 0.1px 0.1px 0.1px 0.1px #9CD7D1;
 }
 
-input[type=email]::placeholder {
+input[type=text]::placeholder {
   color: #325D79B3;
 }
 
 @media (min-width: 50em) {
-  input[type=email] {
+  input[type=text] {
     width: 45%;
   }
   
@@ -65,7 +65,7 @@ input[type=email]::placeholder {
     font-size: 1.65rem;
   }
 
-  input[type=email] {
+  input[type=text] {
     width: 400px;
     margin: 2.5% auto 1.5% auto;
   }

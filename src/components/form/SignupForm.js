@@ -18,10 +18,6 @@ class SignupForm extends PureComponent {
     this.validateEmail();
   }
   
-  // handleOnPaste = (event) => {
-    
-  // }
-
   handleOnFocus = (event) => {
     this.setState({
       confirmRegistration: false,
@@ -67,11 +63,10 @@ class SignupForm extends PureComponent {
             Signup to get the latests updates <br></br>
             <input
               className="form.control"
-              type="email"
+              type="text"
               name="email"
               value={this.state.email || ''}
               onChange={this.handleChange}
-              // onPaste={this.handleOnPaste}
               onFocus={this.handleOnFocus}
               onBlur={this.handleOnBlur}
               placeholder="email@hello.com"
