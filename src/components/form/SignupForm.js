@@ -60,7 +60,7 @@ class SignupForm extends PureComponent {
       <div className="signup-form">
         <form className="form" onSubmit={this.handleSubmit} noValidate>
           <label>
-            Signup to get the latests updates <br></br>
+            Signup to get the latest updates <br></br>
             <input
               className="form.control"
               type="text"

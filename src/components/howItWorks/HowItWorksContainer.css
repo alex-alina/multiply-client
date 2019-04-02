@@ -18,7 +18,7 @@
   flex-wrap: wrap;
 }
 
-.step {
+/* .step {
   display: block;
   width: 70%;
   margin: 0 auto 2vmax auto;
@@ -72,7 +72,7 @@
 
 .drawing-parameters {
   font-size: calc(0.65rem + 0.5vw);
-}
+} */
 
 @media (min-width: 50em) {
   .hiw-container {
@@ -84,7 +84,7 @@
     margin: 3% auto 0 auto;
   }
   
-  .step {
+  /* .step {
     width: 40%;
     margin: 2% auto;
   }
@@ -123,11 +123,16 @@
 
   .description, .num {
     font-size: calc(1rem + 0.5vw);
-  }
+  } */
 }
 
 @media (min-width: 70em) {
-  .step {
+  .hiw-title {
+    font-size: 1.75rem;
+    margin: 1.5% auto 0 auto;
+  }
+  
+  /* .step {
     width: 30%;
     margin: 0 auto;
   }
@@ -137,10 +142,6 @@
     margin-bottom: 30px;
   }
 
-  .hiw-title {
-    font-size: 1.75rem;
-    margin: 1.5% auto 0 auto;
-  }
   
   .description, .num {
     font-size: 1.3rem;
@@ -148,5 +149,5 @@
 
   .drawing-parameters {
     font-size: 0.95rem;
-  }
+  } */
 }

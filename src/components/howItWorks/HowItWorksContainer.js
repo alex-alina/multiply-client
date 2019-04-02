@@ -23,6 +23,8 @@ class HowItWorksContainer extends PureComponent {
                 key={index}
                 stepNum={step.stepNum}
                 stepDescription={step.stepDescription}
+                stepDetails={step.stepDetails}
+                stepDetailsTwo={step.stepDetailsTwo}
                 imgId={step.imgId}
                 stepImg={step.imgSrc}
                 imgDescription={step.imgDescription}
