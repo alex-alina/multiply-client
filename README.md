@@ -2,8 +2,7 @@
 
 WIP: This is the client for Multiply's landing page, a static page with a signup form that collects emails for a mailing list.
 
-## Demo
-[Demo - WIP](https://multiply-landing-page.netlify.app/)
+## [Demo](https://multiply-landing-page.netlify.app/)
 ![](WIP-demo.gif)
 
 ## Description
